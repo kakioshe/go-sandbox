@@ -14,8 +14,15 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
+	// slice of names
+	names := []string{
+		"GladOS",
+		"Lumine",
+		"Var",
+	}
+
 	// Request greeting message
-	message, err := greetings.Hello("GladOS")
+	message, err := greetings.HelloMultiple(names)
 
 	// if error was returned, print it to console and
 	// exit program
