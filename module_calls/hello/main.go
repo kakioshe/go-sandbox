@@ -15,7 +15,7 @@ func main() {
 	log.SetFlags(0)
 
 	// Request greeting message
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("GladOS")
 
 	// if error was returned, print it to console and
 	// exit program
